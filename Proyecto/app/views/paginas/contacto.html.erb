@@ -1,0 +1,9 @@
+<h2>FORMULARIO DE CONTACTO:</h2>
+<form action="enviar-formulario.php" method="post"><label>Nombre:</label>
+<input maxlength="50" name="nombre" required size="50" type="text" autofocus placeholder="Escribe tu nombre" /><label>Email:</label>
+<input name="email" required type="email" placeholder="Escribe tu email" />
+<label>Teléfono</label>
+<input name="telefono" pattern="[0-9]{9}" required type="tel" placeholder="XXXXXXXXX" />
+<textarea cols="80" name="observaciones" rows="8" placeholder="Puedes escribir aquí tus observaciones..."></textarea>
+<input type="submit" value="Enviar" />
+</form>
