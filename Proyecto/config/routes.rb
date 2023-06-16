@@ -2,9 +2,6 @@ Rails.application.routes.draw do
   get 'breads/comprar'
   get 'breads/carrito'
   get 'breads/favorito'
-  get 'panes/comprar'
-  get 'panes/carrito'
-  get 'panes/favorito'
   get 'deditos/comprar'
   get 'deditos/carrito'
   get 'deditos/favorito'
@@ -22,4 +19,10 @@ Rails.application.routes.draw do
   get '/paginas/tienda', to: 'paginas#tienda', as: 'tienda'
   get '/paginas/acerca', to: 'paginas#acerca', as: 'acerca'
   get '/paginas/contacto', to: 'paginas#contacto', as: 'contacto'
+  get '/paginas/deditos/comprar', to: 'deditos#comprar'
+  get '/paginas/breads/comprar', to: 'breads#comprar'
+  get '/paginas/donas/comprar', to: 'donas#comprar'
+
+
+  
 end
