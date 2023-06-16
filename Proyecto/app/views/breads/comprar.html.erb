@@ -1,0 +1,24 @@
+<h1>Compra pan de todo tipo</h1>
+<p>Algunos de nuestros productos:</p>
+<% @breads.each do |bread| %>
+  <h2><%= bread.nombre %></h2>
+  <h5><%= bread.descripcion %></h5>
+  <span><%= bread.precio %></span><br>
+  <a href="/users/sign_up" class="submit">Comprar</a>
+<% end %>
+
+<style>
+h1, h2, h5, span, p{
+color: white;
+}
+.submit{
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;  
+}
+a:hover{
+    color: yellow;
+}
+
+</style>
