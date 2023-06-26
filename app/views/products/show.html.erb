@@ -1,0 +1,15 @@
+
+<h1>Detalles del producto</h1>
+
+<p><strong>Nombre:</strong> <%= @product.name %></p>
+<p><strong>Descripción:</strong> <%= @product.description %></p>
+
+<!-- Agrega aquí los detalles adicionales del producto -->
+
+<%= link_to 'Editar', edit_product_path(@product), class: 'btn btn-primary' %>
+<%= link_to 'Eliminar', @product, method: :delete, data: { confirm: '¿Estás seguro de que deseas eliminar este producto?' }, class: 'btn btn-danger' %>
+<%= link_to 'Volver', products_path, class: 'btn btn-secondary' %><br><br>
+<%= link_to 'Crear nuevos panes', product_breads_path(@product), class: 'btn btn-primary' %>
+<%= link_to 'Crear Bandejas de Deditos', product_trays_path(@product), class: 'btn btn-secondary' %>
+<%= link_to 'Crear Donas', product_donuts_path(@product), class: 'btn btn-success' %>
+

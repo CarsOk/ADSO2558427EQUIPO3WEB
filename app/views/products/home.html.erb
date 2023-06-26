@@ -1,0 +1,16 @@
+<style>
+  .container-fluid {
+    background: linear-gradient(to bottom, #f8f8f8, #e5e5e5);
+  }
+</style>
+
+<div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
+  <div class="text-center">
+    <h1 class="display-4">¡Bienvenido!</h1>
+    <p class="lead">Hola, <%= current_user.email %>. Has iniciado sesión correctamente.</p>
+    <p>
+      <%= link_to 'Ver productos', products_path, class: 'btn btn-primary btn-lg' %>
+    </p>
+  </div>
+</div>
+
