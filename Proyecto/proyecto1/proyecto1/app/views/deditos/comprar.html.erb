@@ -1,0 +1,34 @@
+<h1>Compra bandejas de deditos</h1>
+<p>Algunos de nuestros productos:</p>
+<% @deditos.each do |dedito| %>
+  <img src="/img/imgtienda/bandejalarga.jpeg">
+  <h3>nombre:</h3>
+  <h5><%= dedito.nombre %></h5>
+  <h3>Descripcion del producto:</h3>
+  <h5><%= dedito.descripcion %></h5>
+  <h3>El producto cuesta:</h3>
+  <span><%= dedito.precio %></span><br>
+  <a href="/users/sign_up" class="submit">Comprar</a><br>
+  <a href="/users/sign_up" class="submit">Añadir al carrito</a>
+<% end %>
+
+<style>
+h1, h2, h3, h5, span, p{
+color: white;
+}
+.submit{
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;  
+}
+a:hover{
+    color: yellow;
+}
+img{
+  border-radius: 10%;
+width: 36%;
+height: 230px;
+}
+
+</style>
