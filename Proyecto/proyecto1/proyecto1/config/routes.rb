@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get '/paginas/deditos/comprar', to: 'deditos#comprar'
   get '/paginas/breads/comprar', to: 'breads#comprar'
   get '/paginas/donas/comprar', to: 'donas#comprar'
+  get '/paginas/inicio_secion', to: 'paginas#inicio_secion', as: 'inicio_secion'
 
 
   
