@@ -4207,3 +4207,704 @@ Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-09-27 18:55:44 -05
   
 ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
   
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-10-02 21:12:48 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaginasController#tienda as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/tienda.html.erb within layouts/application
+  Rendered paginas/tienda.html.erb within layouts/application (Duration: 23.2ms | Allocations: 6508)
+  Rendered layout layouts/application.html.erb (Duration: 518.9ms | Allocations: 37132)
+Completed 200 OK in 614ms (Views: 550.3ms | ActiveRecord: 0.0ms | Allocations: 58317)
+
+
+Started GET "/estilos.css" for ::1 at 2023-10-02 21:12:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/estilos.css"):
+  
+Started GET "/banner.jpg" for ::1 at 2023-10-02 21:12:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/banner.jpg"):
+  
+Started GET "/public/img/imgtienda/banner.jpg" for ::1 at 2023-10-02 21:12:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/public/img/imgtienda/banner.jpg"):
+  
+Started GET "/paginas/contacto" for ::1 at 2023-10-02 21:12:52 -0500
+Processing by PaginasController#contacto as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/contacto.html.erb within layouts/application
+  Rendered paginas/contacto.html.erb within layouts/application (Duration: 97.4ms | Allocations: 58000)
+  Rendered layout layouts/application.html.erb (Duration: 103.0ms | Allocations: 59330)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 0.0ms | Allocations: 59870)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:12:52 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:12:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/nicepage.js" for ::1 at 2023-10-02 21:12:52 -0500
+Started GET "/paginas/Page-15.css" for ::1 at 2023-10-02 21:12:52 -0500
+Started GET "/paginas/jquery-1.9.1.min.js" for ::1 at 2023-10-02 21:12:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/Page-15.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/jquery-1.9.1.min.js"):
+  
+Started GET "/paginas/nicepage.css" for ::1 at 2023-10-02 21:12:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.css"):
+  
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:12:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:12:54 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 12.6ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 1803)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 2339)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:12:54 -0500
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:12:54 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:12:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:12:54 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:12:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:12:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+Started GET "/paginas/inicio_secion" for ::1 at 2023-10-02 21:12:59 -0500
+Processing by PaginasController#inicio_secion as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/inicio_secion.html.erb within layouts/application
+  Rendered paginas/inicio_secion.html.erb within layouts/application (Duration: 12.1ms | Allocations: 432)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 1761)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 2278)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:12:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:12:59 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:12:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/contacto" for ::1 at 2023-10-02 21:13:01 -0500
+Processing by PaginasController#contacto as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/contacto.html.erb within layouts/application
+  Rendered paginas/contacto.html.erb within layouts/application (Duration: 1.0ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 1371)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 1776)
+
+
+Started GET "/paginas/jquery-1.9.1.min.js" for ::1 at 2023-10-02 21:13:01 -0500
+Started GET "/paginas/Page-15.css" for ::1 at 2023-10-02 21:13:01 -0500
+Started GET "/paginas/nicepage.css" for ::1 at 2023-10-02 21:13:01 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:13:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/jquery-1.9.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/Page-15.css"):
+  
+Started GET "/paginas/nicepage.js" for ::1 at 2023-10-02 21:13:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.js"):
+  
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:13:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:13:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:13:03 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 1371)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 1776)
+
+
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:13:03 -0500
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:13:03 -0500
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:13:03 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:13:03 -0500
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:13:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:13:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:15:20 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 71.3ms | Allocations: 4946)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms | Allocations: 5368)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:15:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:15:20 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:15:20 -0500
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:15:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:15:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:15:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:15:55 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 15.1ms | Allocations: 476)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 2139)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.0ms | Allocations: 3408)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:15:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:15:56 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:15:56 -0500
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:15:56 -0500
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:15:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:15:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/inicio_secion" for ::1 at 2023-10-02 21:16:08 -0500
+Processing by PaginasController#inicio_secion as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/inicio_secion.html.erb within layouts/application
+  Rendered paginas/inicio_secion.html.erb within layouts/application (Duration: 0.9ms | Allocations: 429)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 1757)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 2268)
+
+
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:16:08 -0500
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:16:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:16:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+Started GET "/paginas/contacto" for ::1 at 2023-10-02 21:16:10 -0500
+Processing by PaginasController#contacto as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/contacto.html.erb within layouts/application
+  Rendered paginas/contacto.html.erb within layouts/application (Duration: 40.0ms | Allocations: 42147)
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 43475)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.0ms | Allocations: 44009)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:16:10 -0500
+Started GET "/paginas/jquery-1.9.1.min.js" for ::1 at 2023-10-02 21:16:10 -0500
+Started GET "/paginas/nicepage.css" for ::1 at 2023-10-02 21:16:10 -0500
+Started GET "/paginas/Page-15.css" for ::1 at 2023-10-02 21:16:10 -0500
+Started GET "/paginas/nicepage.js" for ::1 at 2023-10-02 21:16:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/jquery-1.9.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/Page-15.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.js"):
+  
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:16:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:16:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/contacto" for ::1 at 2023-10-02 21:16:17 -0500
+Processing by PaginasController#contacto as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/contacto.html.erb within layouts/application
+  Rendered paginas/contacto.html.erb within layouts/application (Duration: 0.6ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 1370)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 1775)
+
+
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:16:17 -0500
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:16:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/nicepage.css" for ::1 at 2023-10-02 21:16:17 -0500
+Started GET "/paginas/Page-15.css" for ::1 at 2023-10-02 21:16:17 -0500
+Started GET "/paginas/jquery-1.9.1.min.js" for ::1 at 2023-10-02 21:16:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/Page-15.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/jquery-1.9.1.min.js"):
+  
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:16:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+Started GET "/paginas/nicepage.js" for ::1 at 2023-10-02 21:16:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.js"):
+  
+Started GET "/paginas/inicio_secion" for ::1 at 2023-10-02 21:16:20 -0500
+Processing by PaginasController#inicio_secion as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/inicio_secion.html.erb within layouts/application
+  Rendered paginas/inicio_secion.html.erb within layouts/application (Duration: 0.2ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1371)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1777)
+
+
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:16:20 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:16:20 -0500
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:16:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:16:24 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1370)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1775)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:16:24 -0500
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:16:24 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:16:24 -0500
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:16:24 -0500
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:16:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:16:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+Started GET "/paginas/tienda" for ::1 at 2023-10-02 21:16:36 -0500
+Processing by PaginasController#tienda as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/tienda.html.erb within layouts/application
+  Rendered paginas/tienda.html.erb within layouts/application (Duration: 1.0ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 1683)
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 2217)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:16:36 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:16:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/estilos.css" for ::1 at 2023-10-02 21:16:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/estilos.css"):
+  
+Started GET "/paginas/public/img/imgtienda/banner.jpg" for ::1 at 2023-10-02 21:16:37 -0500
+Started GET "/paginas/banner.jpg" for ::1 at 2023-10-02 21:16:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/banner.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/public/img/imgtienda/banner.jpg"):
+  
+Started GET "/paginas/contacto" for ::1 at 2023-10-02 21:19:35 -0500
+Processing by PaginasController#contacto as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/contacto.html.erb within layouts/application
+  Rendered paginas/contacto.html.erb within layouts/application (Duration: 0.7ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 1371)
+Completed 200 OK in 13ms (Views: 11.9ms | Allocations: 1795)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:19:35 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:19:35 -0500
+Started GET "/paginas/Page-15.css" for ::1 at 2023-10-02 21:19:35 -0500
+Started GET "/paginas/nicepage.css" for ::1 at 2023-10-02 21:19:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/nicepage.js" for ::1 at 2023-10-02 21:19:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/Page-15.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/nicepage.js"):
+  
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:19:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+Started GET "/paginas/jquery-1.9.1.min.js" for ::1 at 2023-10-02 21:19:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/jquery-1.9.1.min.js"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:19:37 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1371)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 1776)
+
+
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:19:37 -0500
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:19:37 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:19:37 -0500
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:19:37 -0500
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:19:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:19:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:24:42 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 16.8ms | Allocations: 4244)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 5908)
+Completed 200 OK in 36ms (Views: 33.5ms | Allocations: 9000)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:24:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:24:42 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:24:42 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:24:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:24:42 -0500
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:24:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:26:13 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 16.5ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 2141)
+Completed 200 OK in 32ms (Views: 30.0ms | Allocations: 3411)
+
+
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:26:13 -0500
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:26:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:26:13 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:26:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:26:13 -0500
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:26:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:27:09 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3810)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 4523)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:27:09 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:27:09 -0500
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:27:09 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:27:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:27:10 -0500
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:27:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:27:27 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 24.8ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 2141)
+Completed 200 OK in 44ms (Views: 41.2ms | Allocations: 3410)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:27:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:27:27 -0500
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:27:27 -0500
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:27:27 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:27:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:27:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:28:33 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 18.5ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 2158)
+Completed 200 OK in 37ms (Views: 34.2ms | Allocations: 4447)
+
+
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:28:33 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:28:33 -0500
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:28:33 -0500
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:28:33 -0500
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:28:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:28:34 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+Started GET "/paginas/acerca" for ::1 at 2023-10-02 21:29:08 -0500
+Processing by PaginasController#acerca as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering paginas/acerca.html.erb within layouts/application
+  Rendered paginas/acerca.html.erb within layouts/application (Duration: 7.9ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 2141)
+Completed 200 OK in 26ms (Views: 23.3ms | Allocations: 3434)
+
+
+Started GET "/paginas/vendor/fontawesome-free/css/all.min.css" for ::1 at 2023-10-02 21:29:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/paginas/css/sb-admin-2.min.css" for ::1 at 2023-10-02 21:29:08 -0500
+Started GET "/paginas/image-04.jpg" for ::1 at 2023-10-02 21:29:08 -0500
+Started GET "/paginas/css/bootstrap.min.css" for ::1 at 2023-10-02 21:29:08 -0500
+Started GET "/paginas/ht%20tps://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" for ::1 at 2023-10-02 21:29:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/sb-admin-2.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/image-04.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/ht%20tps:/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"):
+  
+Started GET "/paginas/img/image-01.jpg" for ::1 at 2023-10-02 21:29:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/paginas/img/image-01.jpg"):
+  
