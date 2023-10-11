@@ -1,0 +1,74 @@
+<style>
+  .product-details {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .product-details h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .product-details p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .product-actions {
+    margin-top: 20px;
+  }
+
+  .product-actions .btn {
+    margin-right: 10px;
+  }
+
+  .create-actions {
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #FF6347;
+  }
+
+  .create-actions h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+  }
+
+  .create-actions .btn {
+    margin-bottom: 10px;
+  }
+</style>
+
+<h1>Detalles del producto</h1>
+
+<div class="product-details">
+  <h2>Nombre:</h2>
+  <p><strong><%= @product.name %></strong></p>
+
+  <h2>Descripción:</h2>
+  <p><strong><%= @product.description %></strong></p>
+
+  <!-- Agrega aquí los detalles adicionales del producto -->
+</div>
+
+<div class="product-actions">
+  <%= link_to 'Editar', edit_product_path(@product), class: 'btn btn-primary' %>
+  <%= link_to 'Eliminar', @product, method: :delete, data: { confirm: '¿Estás seguro de que deseas eliminar este producto?' }, class: 'btn btn-danger' %>
+  <%= link_to 'Volver', products_path, class: 'btn btn-secondary' %><br><br>
+</div>
+
+<div class="create-actions">
+  <h2 style="color: white;">Acciones de creación</h2>
+  <%= link_to 'Crear nuevos panes', product_breads_path(@product), class: 'btn btn-primary' %>
+  <%= link_to 'Crear Bandejas de Deditos', product_trays_path(@product), class: 'btn btn-secondary' %>
+  <%= link_to 'Crear Donas', product_donuts_path(@product), class: 'btn btn-success' %>
+</div>
