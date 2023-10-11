@@ -1,2 +1,0 @@
-class Dedito < ApplicationRecord
-end

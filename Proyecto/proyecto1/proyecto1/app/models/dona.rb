@@ -1,2 +1,0 @@
-class Dona < ApplicationRecord
-end
