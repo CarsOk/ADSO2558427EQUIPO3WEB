@@ -1,2 +1,0 @@
-# ADSO2558427EQUIPO3WEB
-Proyecto Web
