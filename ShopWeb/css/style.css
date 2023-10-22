@@ -224,6 +224,7 @@ input[type="submit"] {
     text-decoration: none;
     letter-spacing: 1px;
     position: relative;
+    left: -180px;
 }
 
 .logo_agile h1 a:hover {
@@ -323,7 +324,7 @@ ul.multi-column-dropdown li a:hover {
 /*-- carousel-slider --*/
 
 .carousel-item.item1 {
-    background: url(../images/b1.jpg) no-repeat center;
+    background: url(../images/banner_img_01.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -332,16 +333,17 @@ ul.multi-column-dropdown li a:hover {
 }
 
 .carousel-item.item2 {
-    background: url(../images/b2.jpg) no-repeat center;
+    background: url(../images/banner_img_02.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
+     
 }
 
 .carousel-item.item3 {
-    background: url(../images/b3.jpg) no-repeat center;
+    background: url(../images/banner_img_03.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -350,7 +352,7 @@ ul.multi-column-dropdown li a:hover {
 }
 
 .carousel-item.item4 {
-    background: url(../images/b4.jpg) no-repeat center;
+    background: url(../images/category_img_03.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
