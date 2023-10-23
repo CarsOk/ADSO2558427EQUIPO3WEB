@@ -208,6 +208,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  width: 200px;
 }
 
 svg:not(:root) {
@@ -480,6 +481,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  width: auto;
 }
 
 .img-thumbnail {
