@@ -209,6 +209,7 @@ img {
   vertical-align: middle;
   border-style: none;
   width: 200px;
+  height: 251px;
 }
 
 svg:not(:root) {
@@ -482,6 +483,7 @@ mark,
   max-width: 100%;
   height: auto;
   width: auto;
+  height: 230px;
 }
 
 .img-thumbnail {
@@ -7942,6 +7944,7 @@ button.bg-dark:focus {
   }
   .pb-sm-5,
   .py-sm-5 {
+    background-color: aliceblue;
     padding-bottom: 3rem !important;
   }
   .pl-sm-5,
