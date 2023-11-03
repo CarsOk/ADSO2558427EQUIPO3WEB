@@ -194,8 +194,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="row">
 						<!-- search -->
 						<div class="col-10 agileits_search">
-							<form class="form-inline" action="#" method="post">
-								<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required>
+							<form class="form-inline" action="#" method="post" onsubmit="searchProducts(); return false;">
+								<input class="form-control mr-sm-2" type="search" id="search-input" placeholder="Search" aria-label="Search" required>
 								<button class="btn my-2 my-sm-0" type="submit">Search</button>
 							</form>
 						</div>
@@ -1372,7 +1372,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script src="js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
-
+	<script src="js/buscar.js"></script>
 </body>
 
 </html>
