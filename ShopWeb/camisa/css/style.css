@@ -235,8 +235,9 @@ input[type="submit"] {
 
 .logo_agile h1 a img {
     position: absolute;
-    left: -40%;
+    left: -63%;
     top: -23px;
+    height: 65px;
 }
 
 .logo_agile {
@@ -2899,7 +2900,7 @@ div#testimonials h4.m-title {
     .logo_agile h1 a {
         font-size: 32px;
     }
-    .logo_agile h1 a img {
+    
         left: -32%;
         width: 35%;
         top: -8px;
