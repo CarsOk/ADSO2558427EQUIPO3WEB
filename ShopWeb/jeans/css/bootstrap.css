@@ -483,7 +483,7 @@ mark,
   max-width: 100%;
   height: auto;
   width: auto;
-  height: 230px;
+  height: 70px;
 }
 
 .img-thumbnail {
@@ -6268,7 +6268,9 @@ button.bg-dark:focus {
 
 .rounded-circle {
   border-radius: 50% !important;
+  height: 200px;
 }
+
 
 .rounded-0 {
   border-radius: 0 !important;
