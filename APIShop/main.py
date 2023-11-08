@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, request, render_template
 from dataBase import PostgreSQLDB
+from flask_cors import CORS
 
 app = Flask(__name__)
 
+CORS(app)
 
 db = PostgreSQLDB(
     host='localhost',
@@ -29,13 +31,19 @@ def IniciarSesion():
 @app.route("/CrearUsuario", methods=['POST'])
 def CrearUsuario():
     data = request.get_json()
-    nombre = data.get('nombre')
-    correo = data.get('correo')
+    print(data)
+    nombre = data.get('name')
+    correo = data.get('email')
     password = data.get('password')
 
     resultado = db.create("INSERT INTO Usuarios (nombre, correo_electronico, password) VALUES (%s, %s, %s)", (nombre, correo, password))
-    return resultado
-    # return jsonify({"message": "Solicitud Post Exitosa", "resultado": resultado})
+    res = {
+        "status":True,
+        "statusCode":200,
+        "response": resultado,
+        "Mensaje": "Se inserto correctamente"
+    }
+    return res
 
 
 
