@@ -18,13 +18,24 @@ db.connect()
 @app.route("/IniciarSesion", methods=['POST'])
 def IniciarSesion():
     data = request.get_json()
-    correo = data.get('correo')
+    nombre = data.get('nombre')
     password = data.get('password')
-    resultado = db.read(f"SELECT *FROM Usuarios where correo_electronico = '{correo}' and password = '{password}'")
-    print(resultado)
+    resultado = db.read(f"SELECT * FROM Usuarios WHERE nombre = '{nombre}' AND password = '{password}'")
+
     if len(resultado) != 0: 
-        return "ingreso correctamente"
-    return "Usuario Incorrecto"
+        res = {
+            "success": True,
+            "statusCode": 200,
+            "Mensaje": "Inicio de sesión exitoso"
+        }
+        return jsonify(res)
+    else:
+        res = {
+            "success": False,
+            "statusCode": 401,
+            "Mensaje": "Credenciales incorrectas"
+        }
+        return jsonify(res)
     # return jsonify({"message": "Solicitud Post Exitosa", "resultado": resultado})
 
 
