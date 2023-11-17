@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
+        console.log("contraseña", password)
 
         // Crear un objeto con los datos del usuario
         const user = {
@@ -20,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch("http://127.0.0.1:4000/CrearUsuario", {
             method: "POST",
             mode: "cors",
-            credentials: "include",
             headers: {
                 "Content-Type": "application/json",
             },
@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.getElementById("loginForm");  // Asegúrate de tener un formulario con el id "loginForm" en tu HTML.
 
@@ -58,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Obtener los valores del formulario de inicio de sesión
         const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
+        const password = document.getElementById("pass").value;
 
         // Crear un objeto con los datos del usuario para iniciar sesión
         const userLogin = {
-            correo: username,
+            username: username,
             password: password,
         };
 
@@ -77,13 +78,17 @@ document.addEventListener("DOMContentLoaded", function () {
         })
             .then((response) => response.json())
             .then((data) => {
+            console.log(data);
                 // Manejar la respuesta del servidor para iniciar sesión
                 if (data.success) {
-                    // Inicio de sesión exitoso, puedes redirigir al usuario o mostrar un mensaje de éxito
-                    alert("Inicio de sesión exitoso");
+                    const token = data.Respuesta[1];
+                    const name = data.Respuesta[0];
+                    localStorage.setItem('token', token);
+                    localStorage.setItem('name', name);
+                    window.location.reload();
                 } else {
                     // Mostrar un mensaje de error
-                    alert("Error en el inicio de sesión: " + data.message);
+                    alert("Error en el inicio de sesión: " + data.Mensaje);
                 }
             })
             .catch((error) => {
@@ -92,3 +97,5 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 });
+
+
