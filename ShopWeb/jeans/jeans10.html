@@ -230,9 +230,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<select id="agileinfo-nav_search" name="agileinfo_search" class="border" required="" onchange="redirectToPage(this)">
 							<option value="">Todas las Categorías</option>
 							<option value="Camisa">Camisa</option>
-							<option value="Sueter">Busos</option>
+							<option value="busos">Busos</option>
 							<option value="Jeans">Jeans</option>
-							<option value="Accessorio">Accesorio</option>
+							<option value="Blusa">Blusas</option>
+							<option value="Vestido">Vestidos</option>
+							
 						</select>
 					</form>
 					
@@ -250,8 +252,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								window.location.href = basePath + "buso.html"; // Cambia "buso.html" a la URL de la página correspondiente.
 							} else if (selectedValue === "Jeans") {
 								window.location.href = basePath + "jeans.html"; // Cambia "jeans.html" a la URL deseada.
-							} else if (selectedValue === "Accessorio") {
-								window.location.href = basePath + "product2.html"; // Cambia "product2.html" a la URL de la página respectiva.
+							} else if (selectedValue === "Blusa") {
+								window.location.href = basePath + "blusas.html"; // Cambia "blusas.html" a la URL de la página respectiva.
+							} else if (selectedValue === "Vestido") {
+								window.location.href = basePath + "vestidos.html"; // Cambia "vestidos.html" a la URL de la página respectiva.
 							}
 						}
 						</script>
@@ -525,10 +529,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<a href="../buso.html">Busos</a>
 							</li>
 							<li class="mb-3">
-								<a href="../jeans.html">Jeans</a>
+								<a href="../blusas.html">Blusas</a>
 							</li>
-							<li class="mb-3">
-								<a href="product2.html">Accesorio</a>
+                            <li class="mb-3">
+								<a href="../vestidos.html">Vestidos</a>
 							</li>
 						</ul>
 					</div>

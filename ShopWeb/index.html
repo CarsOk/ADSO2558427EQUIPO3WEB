@@ -33,6 +33,250 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 <body>
+	<!-- top-header -->
+	<div class="agile-main-top">
+		<div class="container-fluid">
+			<div class="row main-top-w3l py-2">
+				<div class="col-lg-4 header-most-top">
+					<p class="text-white text-lg-left text-center">Offer Zone Top Deals & Discounts
+						<i class="fas fa-shopping-cart ml-1"></i>
+					</p>
+				</div>
+				<div class="col-lg-8 header-right mt-lg-0 mt-2">
+					<!-- header lists -->
+					<ul>
+						<li class="text-center border-right text-white">
+							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
+								<i class="fas fa-truck mr-2"></i>Track Order</a>
+						</li>
+						<li class="text-center border-right text-white">
+							<i class="fas fa-phone mr-2"></i> 001 234 5678
+						</li>
+						<li class="text-center border-right text-white">
+							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
+								<i class="fas fa-sign-in-alt mr-2"></i> Iniciar Sesion </a>
+						</li>
+						<li class="text-center text-white">
+							<a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
+								<i class="fas fa-sign-out-alt mr-2"></i> Registrate </a>
+						</li>
+					</ul>
+					<!-- //header lists -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- modals -->
+	<!-- log in -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center">Iniciar Sesion</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="loginForm" action="#" method="post">
+						<div class="form-group">
+							<label class="col-form-label">Nombre De Usuario</label>
+							<input type="text" class="form-control" placeholder=" " id="username"  name="Name" required="">
+						</div>
+						<div class="form-group">
+							<label class="col-form-label">Contraseña</label>
+							<input type="password" class="form-control" placeholder=" " id="password" name="Password" required="">
+						</div>
+						<div class="right-w3l">
+							<input type="submit" class="form-control" value="Log in">
+						</div>
+						<div class="sub-w3l">
+							<div class="custom-control custom-checkbox mr-sm-2">
+								<input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+								<label class="custom-control-label" for="customControlAutosizing">Recordar?</label>
+							</div>
+						</div>
+						<p class="text-center dont-do mt-3">No Tienes Una Cuenta?
+							<a href="#" data-toggle="modal" data-target="#exampleModal2">
+								Registrate ahora</a>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- register -->
+	<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Registrate</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="registerForm" action="#" method="post">
+						<div class="form-group">
+							<label class="col-form-label">Tu Nombre</label>
+							<input type="text" class="form-control" placeholder=" " id="name" name="Name" required="">
+						</div>
+						<div class="form-group">
+							<label class="col-form-label">Email</label>
+							<input type="email" class="form-control" placeholder=" " id="email" name="Email"
+								required="">
+						</div>
+						<div class="form-group">
+							<label class="col-form-label">Contraseña</label>
+							<input type="password" class="form-control" placeholder=" " id="password" name="Password"
+								id="password1" required="">
+						</div>
+						<div class="form-group">
+							<label class="col-form-label">Confirma Contraseña</label>
+							<input type="password" class="form-control" placeholder=" " name="Confirm Password"
+								id="password2" required="">
+						</div>
+						<div class="right-w3l">
+							<input type="submit" class="form-control" value="Register">
+						</div>
+						<div class="sub-w3l">
+							<div class="custom-control custom-checkbox mr-sm-2">
+								<input type="checkbox" class="custom-control-input" id="customControlAutosizing2">
+								<label class="custom-control-label" for="customControlAutosizing2">Acepta Los Terminos y
+									Condiciones</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- //top-header -->
+
+	<!-- header-bottom-->
+	<div class="header-bot">
+		<div class="container">
+			<div class="row header-bot_inner_wthreeinfo_header_mid">
+				<!-- logo -->
+				<div class="col-md-3 logo_agile">
+					<h1 class="text-center">
+						<a href="index.html" class="font-weight-bold font-italic">
+							<img src="images/logo2.png" alt=" " class="img-fluid">ModaOn
+						</a>
+					</h1>
+				</div>
+				<!-- //logo -->
+				<!-- header-bot -->
+				<div class="col-md-9 header mt-4 mb-md-0 mb-4">
+					<div class="row">
+						<!-- search -->
+						<div class="col-10 agileits_search">
+							<form class="form-inline" action="#" method="post">
+								<input class="form-control mr-sm-2" type="search" placeholder="Search"
+									aria-label="Search" required>
+								<button class="btn my-2 my-sm-0" type="submit">Buscar</button>
+							</form>
+						</div>
+						<!-- //search -->
+						<!-- cart details -->
+						<div class="col-2 top_nav_right text-center mt-sm-0 mt-2">
+							<div class="wthreecartaits wthreecartaits2 cart cart box_1">
+								<form action="#" method="post" class="last">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="display" value="1">
+									<button class="btn w3view-cart" type="submit" name="submit" value="">
+										<i class="fas fa-cart-arrow-down"></i>
+									</button>
+								</form>
+							</div>
+						</div>
+						<!-- //cart details -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- shop locator (popup) -->
+	<!-- //header-bottom -->
+	<!-- navigation -->
+	<div class="navbar-inner">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="agileits-navi_search">
+					<form action="#" method="post">
+						<select id="agileinfo-nav_search" name="agileinfo_search" class="border" required=""
+							onchange="redirectToPage(this)">
+							<option value="">Todas las Categorías</option>
+							<option value="Camisa">Camisa</option>
+							<option value="Sueter">Busos</option>
+							<option value="Jeans">Jeans</option>
+							<option value="Blusas">Blusas</option>
+                            <option value="Vestidos">Vestidos</option>
+						</select>
+					</form>
+
+					<script>
+					function redirectToPage(select) {
+						var selectedValue = select.value;
+						
+						// Realizar la redirección según la opción seleccionada
+						if (selectedValue === "Camisa") {
+							window.location.href = "camisa.html"; // Cambia "camisa.html" a la URL de la página a la que deseas redirigir.
+						} else if (selectedValue === "Sueter") {
+							window.location.href = "buso.html"; // Cambia "sueter.html" a la URL de la página correspondiente.
+						} else if (selectedValue === "Jeans") {
+							window.location.href = "jeans.html"; // Cambia "jeans.html" a la URL deseada.
+						} else if (selectedValue === "Blusas") {
+							window.location.href = "blusas.html"; // Cambia "accesorio.html" a la URL de la página respectiva.
+						} else if (selectedValue === "Vestidos") {
+							window.location.href = "vestidos.html"; // Cambia "accesorio.html" a la URL de la página respectiva.
+						}
+					}
+					</script>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto text-center mr-xl-5">
+						<li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link" href="index.html">Inicio
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link" href="about.html">Sobre Nosotros</a>
+						</li>
+						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								Shop
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="product.html">Producto 1</a>
+								<a class="dropdown-item" href="product2.html">Producto 2</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="checkout.html">Pagina De Pago</a>
+								<a class="dropdown-item" href="payment.html">Payment Page</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contactenos</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- //navigation -->
+
+<body>
 	
 	<!-- banner -->
 	<div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -47,18 +291,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="">
+                            <img class="img-fluid" src="images/busos0.jpg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
-                                <h1 class="h1 text-success"><b>Zay</b> eCommerce</h1>
-                                <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
+                                
+                                <h3 class="h2">La Moda que Abarca Todas las Estaciones</h3>
                                 <p>
-                                    Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). 
-                                    This template is 100% free provided by <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank">TemplateMo</a> website. 
-                                    Image credits go to <a rel="sponsored" class="text-success" href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
-                                    <a rel="sponsored" class="text-success" href="https://unsplash.com/" target="_blank">Unsplash</a> and
-                                    <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank">Icons 8</a>.
+									Entra en el invierno con nuestro catálogo de busos diseñados para mantenerte cálido sin sacrificar la moda. Cada costura cuenta una historia de confort y cada capucha es una promesa de estilo. Descubre el poder del calor y la elegancia
+                          
                                 </p>
                             </div>
                         </div>
@@ -69,15 +310,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
+                            <img class="img-fluid" src="images/camisas000.jpg.crdownload" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">Proident occaecat</h1>
-                                <h3 class="h2">Aliquip ex ea commodo consequat</h3>
+                                <h1 class="h1">Elegancia en Cada Hilo</h1>
+                                <h3 class="h2">Eleva tu Juego de Moda</h3>
                                 <p>
-                                    You are permitted to use this Zay CSS template for your commercial websites. 
-                                    You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
+									Vestir bien es un arte, y nuestras camisas son la paleta con la que creas tu obra maestra diaria. Desde la sala de juntas hasta eventos sociales, cada camisa es una declaración de confianza y buen gusto. Encuentra tu estilo, define tu presencia
+                          
                                 </p>
                             </div>
                         </div>
@@ -88,15 +329,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
+                            <img class="img-fluid" src="images/vestido666.jpg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">Repr in voluptate</h1>
-                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <h1 class="h1">Elegancia que Encanta</h1>
+                                <h3 class="h2">De Día a Noche con Estilo </h3>
                                 <p>
-                                    We bring you 100% free CSS templates for your websites. 
-                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+									Transita sin esfuerzo de día a noche con nuestros vestidos versátiles que se adaptan a cualquier ocasión. Desde la luz del día hasta la sofisticación nocturna, cada vestido está diseñado para acompañarte en cada momento especial. Haz una declaración de estilo en cada transición
                                 </p>
                             </div>
                         </div>
@@ -161,19 +401,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="row">
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_01.jpg" class="card-img-top" alt="...">
+                        <a href="blusa/blusa10.html">
+                            <img src="images/blusa10.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
+									<i class="text-warning fa fa-star"></i>
                                     <i class="text-warning fa fa-star"></i>
                                     <i class="text-warning fa fa-star"></i>
                                     <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
                                 </li>
-                                <li class="text-muted text-right">$240.00</li>
+                                <li class="text-muted text-right">$100.000</li>
                             </ul>
                             <a href="shop-single.html" class="h2 text-decoration-none text-dark">Gym Weight</a>
                             <p class="card-text">
@@ -185,19 +425,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
+                        <a href="jeans/jeans1.html">
+                            <img src="images/jean1.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
-                            <ul class="list-unstyled d-flex justify-content-between">
+                            <ul class="list-unstyled d-flex justify-content-between">			
                                 <li>
+									<i class="text-warning fa fa-star"></i>
                                     <i class="text-warning fa fa-star"></i>
                                     <i class="text-warning fa fa-star"></i>
                                     <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
                                     <i class="text-muted fa fa-star"></i>
                                 </li>
-                                <li class="text-muted text-right">$480.00</li>
+                                <li class="text-muted text-right">$30.000</li>
                             </ul>
                             <a href="product.html" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
                             <p class="card-text">
@@ -209,8 +449,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="product.html">
-                            <img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
+                        <a href="camisa/single8.html">
+                            <img src="images/camisa8.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -221,7 +461,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <i class="text-warning fa fa-star"></i>
                                     <i class="text-warning fa fa-star"></i>
                                 </li>
-                                <li class="text-muted text-right">$360.00</li>
+                                <li class="text-muted text-right">$60.000</li>
                             </ul>
                             <a href="product.html" class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
                             <p class="card-text">
@@ -243,12 +483,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="join-agile text-left p-4">
 						<div class="row">
 							<div class="col-sm-7 offer-name">
-								<h6>Smooth, Rich & Loud Audio</h6>
-								<h4 class="mt-2 mb-3">Branded Headphones</h4>
-								<p>Sale up to 25% off all in store</p>
+								<h6>Estilo, Comodidad y Elegancia</h6>
+								<h4 class="mt-2 mb-3">Busos de Marca en Color Negro</h4>
+								<p>Descuento de hasta un 25% en toda la tienda</p>
 							</div>
 							<div class="col-sm-5 offerimg-w3l">
-								<img src="images/off1.png" alt="" class="img-fluid">
+								<img src="images/buso10.jpg" alt="" class="img-fluid">
 							</div>
 						</div>
 					</div>
@@ -257,12 +497,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="join-agile text-left p-4">
 						<div class="row ">
 							<div class="col-sm-7 offer-name">
-								<h6>A Bigger Phone</h6>
-								<h4 class="mt-2 mb-3">Smart Phones 5</h4>
-								<p>Free shipping order over $100</p>
+								<h6>Suavidad, Estilo y Distinción</h6>
+								<h4 class="mt-2 mb-3">Vestidos de Marca en Elegante Morado</h4>
+								<p>Descuento de hasta un 15% en toda la tienda</p>
 							</div>
 							<div class="col-sm-5 offerimg-w3l">
-								<img src="images/off2.png" alt="" class="img-fluid">
+								<img src="images/vestido12.jpg" alt="" class="img-fluid">
 							</div>
 						</div>
 					</div>
@@ -339,7 +579,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<a href="jeans.html">Jeans</a>
 								</li>
 								<li class="mb-3">
-									<a href="product2.html">Accesorio</a>
+									<a href="blusas.html">Blusas</a>
+								</li>
+								<li class="mb-3">
+									<a href="vestidos.html">Vestidos</a>
 								</li>
 							</ul>
 						</div>
