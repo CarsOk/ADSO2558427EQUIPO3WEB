@@ -7,53 +7,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="zxx">
 
-<head>
-	<title>ModaOn</title>
-	<!-- Meta tag Keywords -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8" />
-	<meta name="keywords" content="Electro Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
-	/>
-	<script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
-
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-	<!-- //Meta tag Keywords -->
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-
-    <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-	<!-- Custom-Files -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- Bootstrap css -->
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- Main css -->
-	<link rel="stylesheet" href="css/fontawesome-all.css">
-	<!-- Font-Awesome-Icons-CSS -->
-	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- pop-up-box -->
-	<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- menu style -->
-	<!-- //Custom-Files -->
-
-	<!-- web fonts -->
-	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
-	    rel="stylesheet">
-	<!-- //web fonts -->
-
+<head id="dinamicHeaderId">
 </head>
+<div id="dinamicHeaderRegisterId" ></div>
+<script>
+	// Cargar el contenido del encabezado usando fetch
+	fetch('header.html')
+		.then(response => response.text())
+		.then(data => {
+			// Insertar el contenido en el contenedor
+			document.getElementById('dinamicHeaderId').innerHTML = data;
+		})
+		.catch(error => console.error('Error al cargar el encabezado:', error));
+
+	// Cargar el contenido del encabezado usando fetch
+		fetch('headerRegister.html')
+		.then(response => response.text())
+		.then(data => {
+			// Insertar el contenido en el contenedor
+			document.getElementById('dinamicHeaderRegisterId').innerHTML = data;
+		})
+		.catch(error => console.error('Error al cargar el encabezado:', error));
 
 <body>
 	<!-- top-header -->
@@ -90,8 +64,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 
+		
+		
+                function redirectToPage(select) {
+                    var selectedValue = select.value;
+                    
+                    // Realizar la redirección según la opción seleccionada
+                    if (selectedValue === "Camisa") {
+                        window.location.href = "camisa.html"; // Cambia "camisa.html" a la URL de la página a la que deseas redirigir.
+                    } else if (selectedValue === "Sueter") {
+                        window.location.href = "buso.html"; // Cambia "sueter.html" a la URL de la página correspondiente.
+                    } else if (selectedValue === "Jeans") {
+                        window.location.href = "jeans.html"; // Cambia "jeans.html" a la URL deseada.
+                    } else if (selectedValue === "Accessorio") {
+                        window.location.href = "product.html"; // Cambia "accesorio.html" a la URL de la página respectiva.
+        }
 
+    
 
+    }
+
+                
+</script>
 	<!-- modals -->
 	<!-- log in -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -292,6 +286,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<!-- //navigation -->
 
+<body>
+	
 	<!-- banner-2 -->
 	<div class="page-head_agile_info_w3l">
 
@@ -1365,6 +1361,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script src="js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
+	<script src="js/headerRegister.js"></script>
 	<script src="js/buscar.js"></script>
 </body>
 

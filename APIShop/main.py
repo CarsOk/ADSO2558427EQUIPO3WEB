@@ -1,8 +1,11 @@
 from flask import Flask, jsonify, request, render_template
 from dataBase import PostgreSQLDB
 from flask_cors import CORS
+import jwt
+import secrets
 
 app = Flask(__name__)
+app.config['SECRET_KEY']= secrets.token_hex(16)
 
 CORS(app)
 
@@ -17,46 +20,64 @@ db.connect()
 
 @app.route("/IniciarSesion", methods=['POST'])
 def IniciarSesion():
+
     data = request.get_json()
-    nombre = data.get('nombre')
+    username = data.get('username')
     password = data.get('password')
-    resultado = db.read(f"SELECT * FROM Usuarios WHERE nombre = '{nombre}' AND password = '{password}'")
+    resultado = db.read(f"SELECT * FROM Usuarios WHERE nombre = '{username}' AND password = '{password}'")
 
     if len(resultado) != 0: 
+    
+        payload = {'username': username, 'password': password}
+        token = jwt.encode(payload, app.config['SECRET_KEY'], algorithm='HS256')
+
+        lista = [username,token]
+         
         res = {
             "success": True,
             "statusCode": 200,
-            "Mensaje": "Inicio de sesión exitoso"
+            "Respuesta": lista
         }
         return jsonify(res)
     else:
         res = {
             "success": False,
-            "statusCode": 401,
-            "Mensaje": "Credenciales incorrectas"
+            "statusCode": 500,
+            "Respuesta": "Error al iniciar sesion"
         }
         return jsonify(res)
-    # return jsonify({"message": "Solicitud Post Exitosa", "resultado": resultado})
 
 
 @app.route("/CrearUsuario", methods=['POST'])
 def CrearUsuario():
     data = request.get_json()
-    print(data)
+
     nombre = data.get('name')
     correo = data.get('email')
     password = data.get('password')
 
     resultado = db.create("INSERT INTO Usuarios (nombre, correo_electronico, password) VALUES (%s, %s, %s)", (nombre, correo, password))
-    res = {
-        "status":True,
-        "statusCode":200,
-        "response": resultado,
-        "Mensaje": "Se inserto correctamente"
-    }
-    return res
+
+    if resultado:
+        res = {
+            "success": True,
+            "statusCode": 200,
+            "Respuesta": "Se insertó correctamente"
+        }
+        return jsonify(res)
+    else:
+        res = {
+            "success": False,
+            "statusCode": 500,
+            "Respuesta": "Error al insertar el usuario en la Base de Datos"
+        }
+        return jsonify(res)
+
 
 
 
 if __name__ ==  "__main__":
     app.run(debug=True, port=4000)
+
+
+ 
