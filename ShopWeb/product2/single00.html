@@ -24,17 +24,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		}
 	</script>
 	<!-- //Meta tag Keywords -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/templatemo.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
 	<!-- Custom-Files -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Bootstrap css -->
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Main css -->
-	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" href="../css/fontawesome-all.css">
 	<!-- Font-Awesome-Icons-CSS -->
-	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- pop-up-box -->
-	<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/menu.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- menu style -->
 	<!-- //Custom-Files -->
 
@@ -68,11 +77,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</li>
 						<li class="text-center border-right text-white">
 							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
-								<i class="fas fa-sign-in-alt mr-2"></i> Log In </a>
+								<i class="fas fa-sign-in-alt mr-2"></i> Iniciar sesion </a>
 						</li>
 						<li class="text-center text-white">
 							<a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
-								<i class="fas fa-sign-out-alt mr-2"></i>Register </a>
+								<i class="fas fa-sign-out-alt mr-2"></i>Registrarse </a>
 						</li>
 					</ul>
 					<!-- //header lists -->
@@ -89,7 +98,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title text-center">Log In</h5>
+					<h5 class="modal-title text-center">Iniciar Sesion</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -97,11 +106,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="modal-body">
 					<form action="#" method="post">
 						<div class="form-group">
-							<label class="col-form-label">Username</label>
+							<label class="col-form-label">Nombre Y Apellido</label>
 							<input type="text" class="form-control" placeholder=" " name="Name" required="">
 						</div>
 						<div class="form-group">
-							<label class="col-form-label">Password</label>
+							<label class="col-form-label">Comntraseña</label>
 							<input type="password" class="form-control" placeholder=" " name="Password" required="">
 						</div>
 						<div class="right-w3l">
@@ -110,12 +119,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="sub-w3l">
 							<div class="custom-control custom-checkbox mr-sm-2">
 								<input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-								<label class="custom-control-label" for="customControlAutosizing">Remember me?</label>
+								<label class="custom-control-label" for="customControlAutosizing">Recuerdas La Contraseña?</label>
 							</div>
 						</div>
-						<p class="text-center dont-do mt-3">Don't have an account?
+						<p class="text-center dont-do mt-3">No Tienes Cuenta?
 							<a href="#" data-toggle="modal" data-target="#exampleModal2">
-								Register Now</a>
+								Registrate Ahora</a>
 						</p>
 					</form>
 				</div>
@@ -127,7 +136,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Register</h5>
+					<h5 class="modal-title">Registrate</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -135,7 +144,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="modal-body">
 					<form action="#" method="post">
 						<div class="form-group">
-							<label class="col-form-label">Your Name</label>
+							<label class="col-form-label">Nombre Y Apellido</label>
 							<input type="text" class="form-control" placeholder=" " name="Name" required="">
 						</div>
 						<div class="form-group">
@@ -143,11 +152,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<input type="email" class="form-control" placeholder=" " name="Email" required="">
 						</div>
 						<div class="form-group">
-							<label class="col-form-label">Password</label>
+							<label class="col-form-label">Contraseña</label>
 							<input type="password" class="form-control" placeholder=" " name="Password" id="password1" required="">
 						</div>
 						<div class="form-group">
-							<label class="col-form-label">Confirm Password</label>
+							<label class="col-form-label">Confirmar Contraseña</label>
 							<input type="password" class="form-control" placeholder=" " name="Confirm Password" id="password2" required="">
 						</div>
 						<div class="right-w3l">
@@ -156,7 +165,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="sub-w3l">
 							<div class="custom-control custom-checkbox mr-sm-2">
 								<input type="checkbox" class="custom-control-input" id="customControlAutosizing2">
-								<label class="custom-control-label" for="customControlAutosizing2">I Accept to the Terms & Conditions</label>
+								<label class="custom-control-label" for="customControlAutosizing2">Acepto Los Terminos y Condiciones</label>
 							</div>
 						</div>
 					</form>
@@ -174,8 +183,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- logo -->
 				<div class="col-md-3 logo_agile">
 					<h1 class="text-center">
-						<a href="index.html" class="font-weight-bold font-italic">
-							<img src="images/logo2.png" alt=" " class="img-fluid">Moda Shop
+						<a href="../index.html" class="font-weight-bold font-italic">
+							<img src="images/logo2.png" alt=" " class="img-fluid">ModaOn
 						</a>
 					</h1>
 				</div>
@@ -185,8 +194,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="row">
 						<!-- search -->
 						<div class="col-10 agileits_search">
-							<form class="form-inline" action="#" method="post">
-								<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required>
+							<form class="form-inline" action="#" method="post" onsubmit="searchProducts(); return false;">
+								<input class="form-control mr-sm-2" type="search" id="search-input" placeholder="Search" aria-label="Search" required>
 								<button class="btn my-2 my-sm-0" type="submit">Search</button>
 							</form>
 						</div>
@@ -220,28 +229,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<select id="agileinfo-nav_search" name="agileinfo_search" class="border" required="" onchange="redirectToPage(this)">
 							<option value="">Todas las Categorías</option>
 							<option value="Camisa">Camisa</option>
-							<option value="Sueter">Suéter</option>
+							<option value="busos">Busos</option>
 							<option value="Jeans">Jeans</option>
-							<option value="Accessorio">Accesorio</option>
+							<option value="Blusa">Blusas</option>
+							<option value="Vestido">Vestidos</option>
+							
 						</select>
 					</form>
 					
 					<script>
-					function redirectToPage(select) {
-						var selectedValue = select.value;
+						function redirectToPage(select) {
+							var selectedValue = select.value;
+							
+							// Obtener la ruta base para las páginas fuera de la carpeta actual
+							var basePath = "../"; // Esto sube un nivel en la jerarquía de carpetas.
 						
-						// Realizar la redirección según la opción seleccionada
-						if (selectedValue === "Camisa") {
-							window.location.href = "faqs.html"; // Cambia "camisa.html" a la URL de la página a la que deseas redirigir.
-						} else if (selectedValue === "Sueter") {
-							window.location.href = "privacy.html"; // Cambia "sueter.html" a la URL de la página correspondiente.
-						} else if (selectedValue === "Jeans") {
-							window.location.href = "product.html"; // Cambia "jeans.html" a la URL deseada.
-						} else if (selectedValue === "Accessorio") {
-							window.location.href = "product2.html"; // Cambia "accesorio.html" a la URL de la página respectiva.
+							// Realizar la redirección según la opción seleccionada
+							if (selectedValue === "Camisa") {
+								window.location.href = basePath + "camisa.html"; // Cambia "camisa.html" a la URL de la página a la que deseas redirigir.
+							} else if (selectedValue === "Busos") {
+								window.location.href = basePath + "buso.html"; // Cambia "buso.html" a la URL de la página correspondiente.
+							} else if (selectedValue === "Jeans") {
+								window.location.href = basePath + "jeans.html"; // Cambia "jeans.html" a la URL deseada.
+							} else if (selectedValue === "Blusa") {
+								window.location.href = basePath + "blusas.html"; // Cambia "blusas.html" a la URL de la página respectiva.
+							} else if (selectedValue === "Vestido") {
+								window.location.href = basePath + "vestidos.html"; // Cambia "vestidos.html" a la URL de la página respectiva.
+							}
 						}
-					}
-					</script>
+						</script>
 					
 				</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -251,30 +267,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto text-center mr-xl-5">
 						<li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
-							<a class="nav-link" href="index.html">Home
+							<a class="nav-link" href="../index.html">Inicio
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-							<a class="nav-link" href="about.html">About Us</a>
+							<a class="nav-link" href="../about.html">Sobre  Nosotros</a>
 						</li>
 						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Pages
+								Shop
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="product.html">Product 1</a>
-								<a class="dropdown-item" href="product2.html">Product 2</a>
+								<a class="dropdown-item" href="../product.html">Producto 1</a>
+								<a class="dropdown-item" href="../product2.html">Producto 2</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="single.html">Single Product 1</a>
-								<a class="dropdown-item" href="single2.html">Single Product 2</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="checkout.html">Checkout Page</a>
-								<a class="dropdown-item" href="payment.html">Payment Page</a>
+								<a class="dropdown-item" href="../checkout.html">Checkout Page</a>
+								<a class="dropdown-item" href="../payment.html">Payment Page</a>
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact Us</a>
+							<a class="nav-link" href="../contact.html">Contactenos</a>
 						</li>
 					</ul>
 				</div>
@@ -294,10 +307,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container">
 				<ul class="w3_short">
 					<li>
-						<a href="../index.html>Home</a>
+						<a href="../index.html">Inicio</a>
 						<i>|</i>
 					</li>
-					<li>Single Product 1</li>
+					<li>Preview</li>
 				</ul>
 			</div>
 		</div>
@@ -458,11 +471,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="footer-top-first">
 			<div class="container py-md-5 py-sm-4 py-3">
 				<!-- footer first section -->
-				<h2 class="footer-top-head-w3l font-weight-bold mb-2">Electronics :</h2>
-				<p class="footer-main mb-4">
-					If you're considering a new laptop, looking for a powerful new car stereo or shopping for a new HDTV, we make it easy to
-					find exactly what you need at a price you can afford. We offer Every Day Low Prices on TVs, laptops, cell phones, tablets
-					and iPads, video games, desktop computers, cameras and camcorders, audio, video and more.</p>
 				<!-- //footer first section -->
 				<!-- footer second section -->
 				<div class="row w3l-grids-footer border-top border-bottom py-sm-4 py-3">
@@ -512,16 +520,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3 class="text-white font-weight-bold mb-3">Categories</h3>
 						<ul>
 							<li class="mb-3">
-								<a href="product.html">Camisas </a>
+								<a href="../camisa.html">Camisas </a>
 							</li>
 							<li class="mb-3">
-								<a href="product.html">Sueter</a>
+								<a href="../buso.html">Busos</a>
 							</li>
 							<li class="mb-3">
-								<a href="product.html">Jeans</a>
+								<a href="../jeans.html">Jeans</a>
 							</li>
 							<li class="mb-3">
-								<a href="product2.html">Accesorio</a>
+								<a href="../blusas.html">Blusas</a>
+							</li>
+                            <li class="mb-3">
+								<a href="../vestidos.html">Vestidos</a>
 							</li>
 						</ul>
 					</div>
@@ -531,42 +542,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3 class="text-white font-weight-bold mb-3">Quick Links</h3>
 						<ul>
 							<li class="mb-3">
-								<a href="index.html">Home</a>
+								<a href="../index.html">Inicio</a>
 							</li>
 							<li class="mb-3">
-								<a href="about.html">About Us</a>
+								<a href="../about.html">Sobre nosotros</a>
 							</li>
 							<li class="mb-3">
-								<a href="contact.html">Contact Us</a>
+								<a href="../contact.html">Contactenos</a>
 							</li>
 							<li class="mb-3">
-								<a href="help.html">Help</a>
+								<a href="../help.html">Ayuda</a>
 							</li>
 							<li class="mb-3">
-								<a href="privacy.html">Privacy</a>
-							</li>
-							<li class="mb-3">
-								<a href="faqs.html">Faqs</a>
+								<a href="../privacy.html">
+									Privacidad</a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-sm-6 footer-grids mt-md-0 mt-4">
-						<h3 class="text-white font-weight-bold mb-3">Get in Touch</h3>
+						<h3 class="text-white font-weight-bold mb-3">Ponerse en contacto</h3>
 						<ul>
 							<li class="mb-3">
 								<i class="fas fa-map-marker"></i> 123 Sebastian, USA.</li>
 							<li class="mb-3">
-								<i class="fas fa-mobile"></i> 333 222 3333 </li>
+								<i class="fas fa-mobile"></i> 304 455 6552 </li>
 							<li class="mb-3">
-								<i class="fas fa-phone"></i> +222 11 4444 </li>
+								<i class="fas fa-phone"></i> 318 883 8844 </li>
 							<li class="mb-3">
 								<i class="fas fa-envelope-open"></i>
-								<a href="mailto:example@mail.com"> mail 1@example.com</a>
+								<a href="mailto:example@mail.com"> ModaOn78@gmail.com</a>
 							</li>
-							<li>
-								<i class="fas fa-envelope-open"></i>
-								<a href="mailto:example@mail.com"> mail 2@example.com</a>
-							</li>
+
 						</ul>
 					</div>
 					<div class="col-md-3 col-sm-6 footer-grids w3l-agileits mt-md-0 mt-4">
