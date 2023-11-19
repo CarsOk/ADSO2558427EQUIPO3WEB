@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Selecciona el elemento de carga
+    var loading = document.getElementById("loading");
+
+    // Simula una solicitud al servicio (puedes reemplazar esto con tu código real)
+    function simulateServiceRequest() {
+        // Muestra el loading antes de la solicitud
+        loading.style.display = "block";
+
+        // Simula una solicitud que tarda 3 segundos en completarse
+        setTimeout(function () {
+            // Oculta el loading después de que la solicitud se haya completado
+            loading.style.display = "none";
+        }, 3000); // 3000 milisegundos = 3 segundos (ajusta según sea necesario)
+    }
+
+    // Llama a la función que simula la solicitud al servicio
+    simulateServiceRequest();
+});
+
+
 var headerIndex = `
         <div class="container-fluid">
             <div class="row main-top-w3l py-2">
@@ -90,12 +111,39 @@ document.addEventListener("DOMContentLoaded", function () {
     const logoutButton = document.getElementById("logoutButton");
 
     logoutButton.addEventListener("click", function () {
-        // Eliminar el token y el nombre del almacenamiento local
-        localStorage.removeItem('token');
-        localStorage.removeItem('name');
-    
+        // Muestra una confirmación antes de cerrar la sesión
+        const confirmLogout = confirm("¿Seguro desea cerrar sesión?");
 
-        // Redirigir al usuario a la página de inicio de sesión
-        window.location.href = "index.html";
+        if (confirmLogout) {
+            // Eliminar el token y el nombre del almacenamiento local
+            localStorage.removeItem('token');
+            localStorage.removeItem('name');
+
+            // Redirigir al usuario a la página de inicio de sesión
+            window.location.href = "index.html";
+        }
     });
 });
+
+function redirectToPage(select) {
+    var selectedValue = select.value;
+    // Realizar la redirección según la opción seleccionada
+    if (selectedValue === "Camisa") {
+        window.location.href = "camisa.html"; // Cambia "camisa.html" a la URL de la página a la que deseas redirigir.
+    
+    } else if (selectedValue === "Busos") {
+        window.location.href = "buso.html"; // Cambia "sueter.html" a la URL de la página correspondiente.
+    
+    } else if (selectedValue === "Jeans") {
+        window.location.href = "jeans.html"; // Cambia "jeans.html" a la URL deseada.
+    
+    } else if (selectedValue === "Accessorio") {
+        window.location.href = "product.html"; // Cambia "accesorio.html" a la URL de la página respectiva.
+    
+    } else if (selectedValue === "Vestidos") {
+        window.location.href = "vestidos.html";
+    
+    } else if (selectedValue === "Blusas") {
+        window.location.href = "blusas.html";
+}
+}

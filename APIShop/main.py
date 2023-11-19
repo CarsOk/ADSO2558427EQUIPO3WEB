@@ -3,6 +3,8 @@ from dataBase import PostgreSQLDB
 from flask_cors import CORS
 import jwt
 import secrets
+import bcrypt
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY']= secrets.token_hex(16)
@@ -51,12 +53,12 @@ def IniciarSesion():
 @app.route("/CrearUsuario", methods=['POST'])
 def CrearUsuario():
     data = request.get_json()
-
     nombre = data.get('name')
     correo = data.get('email')
     password = data.get('password')
+    encrypted_password = encrypt_password(password)
 
-    resultado = db.create("INSERT INTO Usuarios (nombre, correo_electronico, password) VALUES (%s, %s, %s)", (nombre, correo, password))
+    resultado = db.create("INSERT INTO Usuarios (nombre, correo_electronico, password) VALUES (%s, %s, %s)", (nombre, correo, encrypted_password))
 
     if resultado:
         res = {
@@ -71,7 +73,17 @@ def CrearUsuario():
             "statusCode": 500,
             "Respuesta": "Error al insertar el usuario en la Base de Datos"
         }
-        return jsonify(res)
+        return jsonify(res)  
+    
+
+def encrypt_password(password):
+    # Generar una sal (salt) aleatoria
+    salt = bcrypt.gensalt()
+
+    # Cifrar la contraseña con la sal
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)
+
+    return hashed_password
 
 
 
